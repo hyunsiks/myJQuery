@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/11.css">
+</head>
+<body>
+    <div class="tableBox">
+        <table id="table_format" class="table card-table table-vcenter text-nowrap" style="border: none">
+            <thead>
+                <tr>
+                    <th id="noborder-right-left"></th>
+                    <th id="noborder-right-left" style="padding-bottom: 0.85rem;"><span id="filter-type">Filter type:</span></th>
+                    <th colspan="2" id="noborder-right-left">
+                        <div class="input-group" id="myBtnContainer">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend3">Position</span>
+                            </div>
+                            <select class="filter form-control form-control-sm">
+                                <option disabled selected>Select</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Project Manager">Project Manager</option>
+                                <option value="Jr. Project Manager">Jr. Project Manager</option>
+                                <option value="Jr. Programmer">Jr. Programmer</option>
+                                <option value="Mid. Programmer">Mid. Programmer</option>
+                                <option value="Senior Programmer">Senior Programmer</option>
+                                <option value="Programmer">Programmer</option>
+                                <option value="Designer">Designer</option>
+                                <option value="all">All</option>
+                            </select>
+                        </div>
+                    </th>
+                    <th colspan="2" id="noborder-right-left">
+                        <div class="input-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend3">Active/No</span>
+                                </div>
+                                <select class="filter form-control form-control-sm">
+                                    <option disabled selected>Select</option>
+                                    <option value="Active">Yes</option>
+                                    <option value="No">No</option>
+                                    <option value="all">All</option>
+                                </select>
+                            </div>
+                        </div>
+                    </th>
+                    <th id="noborder-right-left" style="width: 14%;">
+                        <div class="input-group" id="home-empl-filter-select">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend3">Employment type</span>
+                            </div>
+                            <select class="filter form-control form-control-sm">
+                                <option disabled selected>Select</option>
+                                <option value="Full time employee">Full time employee</option>
+                                <option value="Part time employee">Part time employee</option>
+                                <option value="Practice">Practice</option>
+                                <option value="Trial period">Trial period</option>
+                                <option value="Freelance">Freelance</option>
+                                <option value="all">All</option>
+                            </select>
+                        </div>
+                    </th>
+                    <th id="noborder-right-left">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend3">Location</span>
+                            </div>
+                            <select class="filter form-control form-control-sm">
+                                <option disabled selected>Select</option>
+                                <option value="Vilnius: Kalvarijų g. 137 E, 312 k., Vilnius, LT-08221">Vilnius: Kalvarijų g. 137 E, 312 k., Vilnius, LT-08221</option>
+                                <option value="Klaipėda: Vilhelmo Berbomo g. 	10-217, LT-92221">Klaipėda: Vilhelmo Berbomo g. 	10-217, LT-92221</option>
+                                <option value="all">All</option>
+                            </select>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="blank_row">
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="row">ID</div>
+                    </th>
+                    <th>
+                        <div class="row" id="home-first-name">First Name</div>
+                    </th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Active/No</th>
+                    <th>Employment Type</th>
+                    <th>Location</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr class="content">
+                    <td>1</td>
+                    <td>First name</td>
+                    <td>Last Name</td>
+                    <td>Manager</td>
+                    <td>Active</td>
+                    <td>Practice</td>
+                    <td>Klaipėda: Vilhelmo Berbomo g. 10-217, LT-92221</td>
+                    <td class="text-right"></td>
+                    <td>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </td>
+                </tr>
+                <tr class="content">
+                    <td>1</td>
+                    <td>First name</td>
+                    <td>Last Name</td>
+                    <td>Manager</td>
+                    <td>No</td>
+                    <td>Practice</td>
+                    <td>Vilnius: Kalvarijų g. 137 E, 312 k., Vilnius, LT-08221</td>
+                    <td class="text-right"></td>
+                    <td>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </td>
+                </tr>
+                <tr class="content">
+                    <td>1</td>
+                    <td>First name</td>
+                    <td>Last Name</td>
+                    <td>Jr. Programmer</td>
+                    <td>Active</td>
+                    <td>Practice</td>
+                    <td>Klaipėda: Vilhelmo Berbomo g. 10-217, LT-92221</td>
+                    <td class="text-right">
+            
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/11.js"></script>
+      
+</body>
+</html>

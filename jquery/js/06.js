@@ -1,3 +1,4 @@
+$("#food").val("Coke $1").prop("selected", true); //시작 셀렉트박스 정하기
 
 $('.submit').click(function(e) {
     var foodCount = $('#food option:selected').val();
